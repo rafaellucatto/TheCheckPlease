@@ -1,0 +1,39 @@
+{
+  "configurations" : [
+    {
+      "id" : "CE1FD939-05C6-4987-A40D-0C7D5FB1B14F",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "environmentVariableEntries" : [
+      {
+        "key" : "IMAGE_DIFF_DIR",
+        "value" : "$(SOURCE_ROOT)\/$(PROJECT_NAME)Tests\/FailureDiffs"
+      },
+      {
+        "key" : "FB_REFERENCE_IMAGE_DIR",
+        "value" : "$(SOURCE_ROOT)\/$(PROJECT_NAME)Tests\/ReferenceImages"
+      }
+    ],
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:CheckPlease.xcodeproj",
+      "identifier" : "164D181D2B67FC7E00729B8B",
+      "name" : "CheckPlease"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:CheckPlease.xcodeproj",
+        "identifier" : "164D18332B67FC7F00729B8B",
+        "name" : "CheckPleaseTests"
+      }
+    }
+  ],
+  "version" : 1
+}
